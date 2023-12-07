@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  padding: 0px 70px;
+  margin: auto;
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #01002e;
+  padding: 20px 0px;
+  z-index: 99;
+}
+
+.navbar .header-area {
+  display: flex;
+  position: relative;
+}
+
+.navbar .header-area .logo {
+  font-style: italic;
+  padding-top: 5px 0px;
+  font-size: 36px;
+  width: 300px;
+  color: #fff;
+  font-family: 'Sail', cursive;
+
+}
+
+.navbar .header-area .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.navbar .header-area .links a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 7px;
+  font-family: cursive;
+}
+
+.navbar .header-area .links a:hover {
+  border-bottom: 4px solid #ffbb00;
+  color: #ffbb00;
+  padding-bottom: 4px;
+  border-radius: 30px;
+}
+
+.navbar .header-area .links a:last-child {
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 18px;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+
+.navbar .header-area .links a:last-child:hover {
+  background-color: #4139d3;
+  box-shadow: 0px 1px 5px 0px #ccc;
+}
+
+/* End navbar */
+.top-wrapper {
+  width: 100%;
+
+  z-index: 10;
+}
+
+
+.top-wrapper .info {
+  width: 40%;
+  margin: 0px 70px;
+  padding-top: 50px;
+  float: left;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.top-wrapper .info h1 {
+  font-size: 44px;
+  margin: 0 0 20px;
+  line-height: 1.4;
+  font-family: 'Sail', cursive;
+  color: #444;
+}
+
+.top-wrapper .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #5d5d5d;
+}
+
+.top-wrapper .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+
+.top-wrapper .image {
+  width: 45%;
+  float: right;
+  height: 90%;
+  padding: 150px 100px 100px 20px;
+}
+
+.top-wrapper .image img {
+  max-width: 100%;
+}
+
+.top-wrapper li {
+  text-align: left;
+  /* list-style: none; */
+
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+.hero-wave {
+  position: absolute;
+  margin-top: 80px;
+  z-index: -1;
+
+}
+
+.hero-wave-path {
+  fill: #01002e;
+}
+
+/* End top-wrapper */
+
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.nav-scroll {
+  background-color: #fff;
+  transition-duration: 400ms;
+}
+
+
+
+
+.active-menu {
+  border-bottom: 4px solid #ffbb00;
+  color: #ffbb00 !important;
+  padding-bottom: 4px;
+  border-radius: 30px;
+}
+
+.nav-scroll .header-area .logo {
+  color: #333 !important;
+
+
+}
+
+.nav-scroll .header-area .links a {
+  color: #333;
+}
+
+/* wave  */
+.wave-content {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 50px;
+}
+
+.wave-content svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 138px;
+}
+
+.wave-content .shape-fill {
+  fill: #01002e;
+}
+
+.wave-content-paket {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-content-paket svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 123px;
+}
+
+.wave-content-paket .shape-fill {
+  fill: #01002e;
+}
+
+.wave-about {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-about svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 144px;
+}
+
+.wave-about .shape-fill {
+  fill: #FFFFFF;
+}
+
+/* end wave  */
+
+/* background */
+.pattren {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239f9f9f' fill-opacity='0.32'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-darkblue {
+  background-color: #01002e;
+}
+
+.bg-blue {
+  background-color: #02007b;
+}
+
+/* end background */
+
+/* footer */
+footer {
+  padding: 10px;
+  margin-top: -30px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.sosmed-icon {
+  padding: 4px 5px;
+  background: #6c63ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+a.sosmed-icon:hover {
+  background: #4139d3 !important;
+  color: #fff !important;
+}
+
+.top {
+  background-color: gray;
+  color: white;
+  width: auto;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+
+.footer-left p {
+  font-family: sans-serif;
+  list-style: none;
+}
+
+.footer-center {
+  float: left;
+  width: 34%;
+}
+
+.footer-center li {
+  font-family: sans-serif;
+  list-style: none;
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+.footer-right {
+  float: left;
+  width: 32%;
+}
+
+.footer-right li {
+  font-family: sans-serif;
+  list-style: none;
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+.judul {
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+/* Untuk Pilihan Paket */
+
+.pilihan-wrapper {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 500px;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  padding: 50px 100px 80px 100px;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Sail', cursive;
+  text-shadow: 2px 2px 5px #fff000
+}
+
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.pilih {
+  float: left;
+  width: 33%;
+
+}
+
+.pilih-icon {
+  position: relative;
+
+}
+
+.pilih-icon img {
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0px #fff;
+}
+
+.pilih-icon p {
+  width: 80%;
+  display: inline-block;
+  font-size: 15px;
+  color: #ccc;
+  margin-top: -15px;
+}
+
+.pilih-icon h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+
+/* end pilih paket  */
+
+/* fitur */
+
+.title-fitur {
+  color: #fff !important;
+  font-size: 32px;
+  font-family: 'Sail', cursive;
+  text-shadow: 2px 2px 5px #fff000;
+  font-weight: 300;
+}
+
+.list-fitur {
+  text-align: left;
+  color: #ccc;
+  font-family: cursive;
+  margin-top: 15px;
+}
+
+
+.contact-form {
+  padding-top: 100px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+  background-color: #6c63ff;
+  color: #fff;
+  border-radius: 10px;
+}
+.contact-submit:hover {
+  background-color: #4139d3;
+}
+
+.info button:hover{
+  background-color: #4139d3;
+
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.card-contact {
+  margin: 0px 50px;
+  box-shadow: 0px 0px 20px 0px #000;
+  background-color: #fff;
+}
+.info-form h3{
+  font-size: 32px;
+  font-family: sail;
+}
+.heading h2{
+  font-family: sail;
+}
+.logo strong{
+  font-family: sail;
+}

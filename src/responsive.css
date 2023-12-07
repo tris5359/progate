@@ -1,0 +1,64 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .footer-left{
+        float:left;
+        width:34%;
+    }
+    .footer-center{
+        float:left;
+        width:34%;
+    }
+    .footer-right{
+        float:right;
+        width:32%;
+    }
+    .pilih {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .footer-left{
+        float:left;
+        width:100%;
+    }
+    .footer-center{
+        float:left;
+        width:100%;
+    }
+    .footer-right{
+        float:right;
+        width:100%;
+    }
+    .judul{
+        font-size: 20px;
+        text-align: center;
+    }
+    .links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .pilih {
+        width: 100%;
+        align-items: center;
+    }
+    .top-wrapper .info{
+        width: 70% !important;
+
+    }
+    .top-wrapper .image img{
+        display: none !important;
+    }
+    .res-mt{
+        margin-top: -200px !important;
+    }
+    .info-form{
+        margin-left:50px !important;
+    }
+
+
+}
